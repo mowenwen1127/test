@@ -1,0 +1,549 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{	
+	width: 100%;
+	height: 3000px;
+	background: rgb(243,242,242);
+	
+}
+a{
+	/*color: black;*/
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+/*导航栏样式设置*/
+#nav{
+	/*width: 100%;*/
+	height: 60px;
+	background: white;
+	font-size: 15px;
+	line-height: 60px;
+	font-weight: 350;
+}
+#logo{
+	width:150px; 
+	height: 60px;
+	margin-left: 10%;
+	display: inline-block;
+	float: left;
+}
+#nav img{
+	width: 90px;
+	height: 60px;
+	display: inline-block;
+	float: left;
+
+	
+}
+
+#nav ul li{
+	width: 88px;
+	display: inline-block;
+	text-align: center;
+}
+#header{
+	width: 80%;
+	margin: auto;
+	margin-top: 25px;
+	height: 300px;
+}
+#header_left{
+	width:60%;
+	height: 300px;
+	display: inline-block;
+	float: left;
+	/*background: green;*/
+	/*padding-right: 8px;*/
+
+
+}
+/* start 头部轮播 */
+
+/*轮播位置*/
+#HeaderCarousel{
+	width: 100%;
+    height: 300px;
+    
+    position: relative;
+    /*background: red;*/
+}
+
+/*轮播图片容器*/
+#HCpicture {
+    width: 100%;
+    height:300px ;
+	display: flex;
+    padding-right: 10px;
+    /*background: green;*/
+}
+
+/*轮播图片样式*/
+#HCpicture img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    
+}
+/*轮播按钮设置*/
+
+/*#HeaderCarousel .btn div {
+    width: 30px;
+    height: 100%;
+    border: 1px solid white;
+}*/
+
+/*向前按钮位置*/
+#HeaderCarousel .prevPalace{
+	width: 30px;
+	height: 300px;
+	border:2px solid pink;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+
+/* 向前按钮 */
+#HeaderCarousel .prevPalace .btn-prev{
+	width: 30px;
+	height: 50px;
+	margin-top: 125px;
+	
+    background:red;
+   
+}
+
+/* 向后按钮位置 */
+#HeaderCarousel .nextPalace{
+	width: 30px;
+    height: 300px;
+	border:2px solid pink;
+	position: absolute;
+	top: 0;
+	right: 10px;
+
+}
+
+/* 向后按钮 */
+#HeaderCarousel .nextPalace .btn-next {
+	width: 30px;
+
+	height: 50px;
+	margin-top: 125px;
+    /*position: absolute;
+    right: 0;
+    top: 90px;*/
+    background:red;
+  /*  background:url(next.png);
+    background-size: 100% 100%;*/
+}
+
+/*轮播点*/
+.dot {
+    padding: 2px 5px;
+    background: rgba(255, 255, 255, 0.3);
+   
+    border-radius: 100px;
+    display: inline-block;
+   position: absolute;
+	top: 250px;
+	right: 48%;
+
+    /*margin: auto;*/
+   /* position: absolute;
+    bottom: 20px;
+    right: 20px;*/
+}
+.dot .dot-item {
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 50%;
+    background: white;
+    display: inline-block;
+}
+
+.dot .dot-item .active {
+    background: #ff5000;
+}
+
+
+
+/*start 右边内容样式*/
+#header_right{
+
+	width: 40%;
+	height: inherit;
+	display: inline-block;
+	float: right;
+	/*background: yellow;*/
+}
+
+
+#headerLine1{
+	width: 100%;
+	height:147px;
+}
+#headerLine2{
+	width: 100%;
+	height:147px;
+	margin-top: 6px;
+}
+/*#headerLine1,#headerLine2 img{
+	
+	height: 147px;
+}*/
+
+
+
+.headerLineleft{
+	width: 49%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	background: red;
+	/*padding: 5px;*/
+}
+.headerLineright{
+	width: 49%;
+	height: 100%;
+	display: inline-block;
+	float: right;
+	background: pink;
+	/*padding: 5px;*/
+}
+.headerLineleft,.headerLineright{
+	border-radius: 10px;
+	position: relative;
+}
+#headerLine1_1{
+	background: url(images/headerLine1.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+#headerLine1_2{
+	background: url(images/headerLine23.jpg);
+	background-size: 100% 100%;
+}
+#headerLine2_2{
+	background: url(images/qj8331137799.jpg);
+	background-size: 100% 100%;
+}
+#headerLine1 img{
+	width: 100px;
+	height: 147px;
+}
+
+.LineText1,.LineText2,.LineText3,.LineText4{
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	position: absolute;
+	top: 120px;
+	padding-left: 10px;
+	display: none;
+	color: white;
+	/*display: inline-block;*/
+	
+	background:black;
+	opacity: 0.5;
+}
+
+
+/*主体内容*/
+#content{
+	width: 80%;
+	height: 5000px;
+	clear: both;
+	padding-top: 20px;
+	/*margin-top: 20px;*/
+	/*background: yellow;*/
+	margin: auto;
+}
+
+
+
+/* 主体左边的内容 */
+#content_left{
+
+	height: 3000px;
+	background: white;
+
+}
+
+/* 主体右边的内容 */
+#content_right{
+	height: 3000px;
+	background: pink;
+}
+
+
+/*主体内容第二部分*/
+#content_second{
+	width: 100%;
+	height: 160px;
+
+}
+
+/*左边第二部分-图片*/
+.second_img{
+	width: 32%;
+	height: 150px;
+	background: yellow;
+	display: inline-block;
+	float: left;
+	border-radius: 10px;
+
+}
+.second_img1{
+	background: url(images/1.png);
+	background-size: 100% 100%;
+}
+.second_img2{
+	 margin-left: 2%;
+}
+.second_img3{
+	margin-left: 2%;
+}
+
+/*个人信息*/
+#person{
+	width: 100%;
+	height: 400px;
+	background: yellow;
+	position:relative;
+	border-radius: 10px;
+}
+/*个人信息背景*/
+#person_bag{
+	width: 100%;
+	height: 150px;
+	background: pink;
+	/*border-radius: 10px;*/
+
+}
+/* 个人头像 */
+#person_img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: red;
+	position: absolute;
+	top: 100px;
+	left: 20px;
+
+}
+/* 博客名字 */
+#person_name{
+	font-size: 15px;
+	position: absolute;
+	top: 160px;
+	left: 140px;
+}
+
+/* 个性签名 */
+#person_text{
+	width: 100%;
+	position: absolute;
+	top: 200px;
+	padding-left: 20px;
+	line-height: 40px;
+	/*left: 20px;*/
+	font-size: 18px;
+	border-bottom: 1px solid grey;
+
+}
+/* 个人信息（文章数量等） */
+#person_information{
+	position: absolute;
+	left: 20px;
+	top: 255px;
+
+}
+
+/* 图文推荐 */
+#Recommend{
+	width: 100%;
+	height: 1000px;
+	background: yellow;
+	margin-top: 15px;
+	border-radius: 10px;
+
+
+	animation-direction: 10s;
+	animation-timing-function:ease-in-out;
+	/*animation-delay: 2s;
+	animation-iteration-count: 2;*/
+
+/*	animate-duration: 2s;    //动画持续时间
+    animate-delay: 1s;    //动画延迟时间
+    animate-iteration-count: 2;    //动画执行次数*/
+}
+/*.slideInDown3 {
+ @keyframes slideInDown3 {
+    from {
+      transform: translate3d(0, -10%, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 50%, 0);
+    }
+  }
+
+  animation-name: slideInDown3;*/
+}
+
+#Recommend p {
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid grey;
+}
+/*图文推荐图片部分*/
+.Recommend_picture{
+	width: 40%;
+	height: 130px;
+	background: white;
+	display: inline-block;
+	float: left;
+	display: flex;
+	padding: 10px;
+	border:1px solid green;
+
+
+}
+.Recommend_picture img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*图文推荐文字部分*/
+.Recommend_text{
+	width: 60%;
+	height: 130px;
+	
+	display: inline-block;
+	float: right;
+	display: flex;
+	padding: 10px;
+
+	/*背景颜色*/
+	background: red;
+	border:1px solid green;
+
+}
+#test
+{width: 100%;height: 100px; background: green;}
+
+/* 最新文章标题 */
+#essayTilte{
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid grey;
+
+	/* 背景导航栏 */
+	background: pink;
+
+}
+
+/* 文章内容 */
+.essay{
+	width: 100%;
+	height: 350px;
+	background: blue;
+	/*margin-top: -10px;*/
+
+}
+
+/*文章左边*/
+.essayLeft{
+	width: 40%;
+	height: 350px;
+	background: white;
+	display: inline-block;
+	float: left;
+	/*padding:0px 10px 10px 10px;*/
+	padding: 10px;
+	/*padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;*/
+	border:1px solid green;
+}
+
+/*文章右边*/
+.essayRight{
+	width: 60%;
+	height: 350px;
+	
+	display: inline-block;
+	float: right;
+	/*display: flex;*/
+	padding: 10px;
+
+	/*背景颜色*/
+	background: red;
+	border:1px solid green;
+}
+/* 文章信息部分 */
+.essayInformation{
+	width: 100%;
+	
+}
+/*左边的头像部分*/
+.essayInformation img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: inline-block;
+	float: left;
+}
+.essayInformation:hover  img{
+	-webkit-transform: rotate(30deg);
+
+}
+
+.essayInformation ul{
+
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 5px;
+
+}
+.essayInformation p{
+	clear: both;
+	padding-top: 10px;
+}
+
+/*文章图片*/
+.essayPicture{
+	width: 100%;
+	height: 240px;
+	background: green;
+	/*clear: both;*/
+}
+/*.essayLeft ul li{
+	display: inline-block;
+	float: right;
+
+	margin-left: 10px;
+}*/
+
+.ptitle{
+	margin-left: 15px;
+}
+
+.essayRight p{
+	margin-top: 120px;
+	margin-left: 50px;
+}

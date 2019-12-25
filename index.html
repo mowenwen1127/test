@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>博客首页</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 先引入JQuery -->
+	<script src="lib/jquery-3.3.1.min.js"></script>
+	<!-- 再引入js -->
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/animate.css">
+
+  
+
+   <script type="text/javascript" src="lib/jquery-1.12.4.js"></script>
+   <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+
+<body>
+	<div id="nav">
+		<div id="logo"><img src="images/logo.png"></div>
+		
+		<ul>
+			<li ><a href="#" style="color: rgb(105,189,255);">首页</a></li>
+			<li ><a href="#" style="color: rgb(149,144,174);">文章</a></li>
+		</ul>
+		
+	</div>
+	
+
+	<!--start 头部内容  -->
+	<div id="header">
+
+		<div id="header_left">
+
+			<!-- start 头部轮播 -->
+			<div id="HeaderCarousel" >
+
+				<!-- 轮播图片 -->
+				<div id="HCpicture">
+					<img src="images/HeaderCarousel/1.jpg">
+				</div>
+
+				<!-- 轮播向前向后按钮 -->
+				<div class="prevPalace">
+					 <div class="btn-prev" onclick="prev()">
+			        </div>
+			    </div>
+			    <!-- 轮播的点 -->
+				<div class="dot" >
+					<div class="dot-item active"></div>
+					<div class="dot-item"></div>
+					<div class="dot-item"></div>
+					<div class="dot-item"></div>
+				</div>
+			    <div class="nextPalace">
+			        <div class="btn-next" onclick="next()">
+			           
+			        </div>
+			    </div>
+			</div>
+		</div>
+	
+
+
+
+		<div id="header_right">
+
+
+			<!-- 头部右边第一行div -->
+			<div id="headerLine1">
+
+				<div id="headerLine1_1" class="headerLineleft">
+					<!-- <img src="images/headerLine1.jpg"> -->
+					<div class="LineText1">前端人才需要具备哪些知识</div>
+				</div>
+
+				<div id="headerLine1_2" class="headerLineright">
+					
+					<div class="LineText2">排名前十的IT论坛社区</div>
+				</div>
+			</div>
+
+
+			<!-- 头部右边第二行div -->
+			<div id="headerLine2">
+
+				<div id="headerLine2_1" class="headerLineleft">
+					<div class="LineText3">图片1</div>
+				</div>
+				
+
+				<div id="headerLine2_2" class="headerLineright">
+					<div class="LineText4">图片1</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+		<!-- 主体内容部分 -->
+		<div id="content">
+
+			<div class="row"> 
+
+
+			        <div  class="col-md-8">
+
+			        	<!-- 主体右边部分 -->
+			        	<div id="content_left">
+							
+
+							<!-- 主体第二部分 -->
+			        		<div id="content_second" >
+			        			<div class="second_img second_img1" ></div>
+			        			<div class="second_img second_img2"></div>
+			        			<div class="second_img second_img3"></div>
+			        		</div>
+
+
+			        		<!-- 主体第三部分内容——文章发布 -->
+			        		<div id="essayTilte">最新文章</div>
+			        		<div id="essay">
+			        			
+			        			<ul>
+			        				<li>
+			        					<!-- 文章的左边 -->
+			        					<div class="essayLeft">
+			        						<div class="essayInformation">
+			        						<img src="images/I.jpg">
+			        						
+			        						
+			        							<ul>
+			        								<li class="pname">nice</li>
+			        								<li class="ptime">2019-12-23</li>
+			        							</ul>
+			        							
+			        							<p><a href="#">#笔记#</a><a href="#" >【转载】C# 组态王数据交互</a></p>
+			        						
+			        						</div>
+
+
+			        						
+			        						<div>
+			        							</div>
+			        						<div class="essayPicture">
+			        						</div>
+			        						
+			        					</div>
+
+			        					<!-- 文章的右边 -->
+			        					<div class="essayRight">
+			        						<p><a href="#">C# 组态王数据交互</a></p>
+			        					</div>
+			        				</li>
+			        			</ul>
+			        		</div>
+
+			        	</div>
+			        </div>
+			        
+
+
+			        <div  class="col-md-4">
+			        	<div id="content_right">
+
+			        		<!-- 个人信息 -->
+			        		<div id="person">
+			        			<div id="person_bag"></div>
+			        			<div id="person_img"></div>
+			        			<div id="person_name"> nice
+			        			 </div>
+			        			 <div id="person_text">have a nice day</div>
+
+			        			 <div id="person_information">
+			        			 	<p>记录生活点点滴滴</p>
+			        			 	<p>文章数量： 0</p>
+			        			 	<p>评论数量： 0</p>
+			        			 	<p>建站时间：2019年12月29日</p>
+			        			 </div>
+			        		</div>
+
+			        		<!-- 图文推荐 -->
+			        		<div id="Recommend" class="animated fadeOutDown">
+			        			<p>图文推荐</p>
+			        			<ul>
+			        				<li><div class="Recommend_picture"><img src="images/recommend/1.jpg"></div>
+			        				<div class="Recommend_text">一段文字</div></li>
+
+			        				<li><div class="Recommend_picture"><img src="images/recommend/1.jpg"></div>
+			        				<div class="Recommend_text">一段文字</div></li>
+
+			        				<li><div class="Recommend_picture"><img src="images/recommend/1.jpg"></div>
+			        				<div class="Recommend_text">一段文字</div></li>
+
+			        				<li><div class="Recommend_picture"><img src="images/recommend/1.jpg"></div>
+			        				<div class="Recommend_text">一段文字</div></li>
+
+			        				<li><div class="Recommend_picture"><img src="images/recommend/1.jpg"></div>
+			        				<div class="Recommend_text">一段文字</div></li>
+			        			</ul>
+			        		</div>
+			        		<div id="test"></div>
+
+
+
+			        	</div>
+			        </div>  
+			    </div> 
+		</div>
+
+			
+				
+			
+			
+			
+
+			
+	
+	
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
